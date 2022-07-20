@@ -1,15 +1,15 @@
 This is a test to figure out GitBehavior
 
 ```js
-const someFunction = () => {
+export function someFunction () {
     const returnValue = ''
-
-    if((new Date()).getDay() % 2 !== 0) {
+    const isEvenDay = (new Date()).getDay() % 2 === 0
+    if(!isEvenDay) {
         console.log('it is an odd day')
-        returnValue = 'OddDay';
+        returnValue = 'ODD_DAY';
     } else {
         console.log('it is an even day')
-        returnValue = 'OddDay';
+        returnValue = 'EVEN_DAY';
     }
 
     return returnValue;
