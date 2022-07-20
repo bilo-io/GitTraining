@@ -6,10 +6,10 @@ export function someFunction () {
     const isEvenDay = (new Date()).getDay() % 2 === 0
     if(!isEvenDay) {
         console.log('it is an odd day')
-        returnValue = 'Odd day';
+        returnValue = 'ODD_DAY';
     } else {
         console.log('it is an even day')
-        returnValue = 'Even day';
+        returnValue = 'EVEN_DAY';
     }
 
     return returnValue;
